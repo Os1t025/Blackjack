@@ -2,7 +2,7 @@
 
 This project recreates the classic game of Blackjack using only HTML and CSS. Enjoy the simplicity and elegance of the game with added animations and transitions, including slides, flips, hover effects, box shadows, and more.
 
-**Instructions**
+<u>**Instructions**</u>
 
 Open the index.html file in your browser.
 Follow on-screen prompts to play Blackjack.
