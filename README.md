@@ -7,6 +7,6 @@ This project recreates the classic game of Blackjack using only HTML and CSS. En
 2. Follow on-screen prompts to play Blackjack.
 3. Have fun and enjoy the immersive experience!
 
-###Credits
+### Credits
 
 Created by Os1t025, abiswas2003, brayan
