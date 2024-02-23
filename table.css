@@ -1,0 +1,232 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('background.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table {
+    max-width: 1300px;
+    text-align: center;
+    position: relative;
+}
+
+.table img {
+    max-width: 100%;
+}
+
+.casino-guy {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 270px;
+    height: auto;
+}
+
+.flip-card {
+    background-color: transparent;
+    perspective: 1000px;
+    position: relative;
+    z-index: 2;
+  }
+  
+.flip-card-inner {
+    position: relative;
+    transform-style: preserve-3d;
+    width: 70px;
+    height: 105px;
+}
+  
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+}
+  
+.flip-card-front {
+    color: black;
+}
+  
+.flip-card-back {
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.cards {
+    width: 70px;
+    height: 105px;
+    perspective: 1000px;
+}
+
+.card1 {
+    position: absolute;
+    top: 345px;
+    left: 878px;
+    width: 70px;
+    height: 105px;
+    z-index: 3;
+}
+
+.card2 {
+  top: -825px;
+  left: 878px;
+  animation: slideDownAndLeft1 3s linear forwards;
+}
+
+.card3 {
+  top: -925px;
+  left: 878px;
+  animation: slideDownAndLeft2 3s linear forwards;
+}
+.card4 {
+  top: -1030px;
+  left: 878px;
+  animation: slideDownAndLeft3 3s linear forwards;
+}
+.card5 {
+  top: -1140px;
+  left: 878px;
+  animation: slideDownAndLeft4 3s linear forwards;
+}
+.cardRule {
+  position: absolute;
+  top: 345px;
+  left: 235px;
+  width: 70px;
+  height: 105px;
+  z-index: 3;
+  cursor: pointer;
+}
+.cardRule img {
+  width: 150px;
+  transition: transform 0.3s ease;
+}
+.cardRule:hover img {
+  transform: scale(1.5); 
+}
+.card2 .flip-card-inner,
+.card4 .flip-card-inner {
+    animation: flip 1s forwards 3s;
+}
+.card3:hover .flip-card-inner{
+  transition: transform 1s;
+}
+/* remove .card5 stuff here to add back the flip stuff*/
+.card5 .flip-card-inner {
+  animation: none; 
+}
+.card5:hover .flip-card-inner {
+  transform: none; 
+}
+div.music {
+    position: absolute;
+    top: 10px; 
+    left: 10px; 
+    z-index: 2;
+}
+@keyframes slideDownAndLeft1 {
+  0% {
+      top: -825px;
+      left: 878px;
+  }
+  50% {
+      top: -390px;
+      left: 878px;
+  }
+  100% {
+      top: -390px;
+      left: 580px;
+  }
+}
+@keyframes slideDownAndLeft2 {
+  0% {
+    top: -925px;
+    left: 878px;
+  }
+  50% {
+      top: -495px;
+      left: 878px;
+  }
+  100% {
+    top: -495px;
+    left: 650px;
+  }
+}
+@keyframes slideDownAndLeft3 {
+  0% {
+    top: -1030px;
+    left: 878px;
+  }
+  50% {
+      top: -930px;
+      left: 878px;
+  }
+  100% {
+    top: -930px;
+    left: 580px;
+  }
+}
+@keyframes slideDownAndLeft4 {
+  0% {
+    top: -1140px;
+    left: 878px;
+  }
+  50% {
+      top: -1034px;
+      left: 878px;
+  }
+  100% {
+    top: -1034px;
+    left: 650px;
+  }
+}
+@keyframes flip {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(180deg);
+  }
+}
+
+.button-container {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.button-hit {
+  background-color: blue;
+}
+
+.button-stay {
+  background-color: #B59410;
+}
+
+.button:hover {
+  transform: translateY(2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
