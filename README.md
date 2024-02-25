@@ -9,4 +9,4 @@ This project recreates the classic game of Blackjack using only HTML and CSS. En
 
 ### Credits
 
-Created by Os1t025, abiswas2003, brayan
+Created by Os1t025, abiswas2003, Brayan-Maldonado
