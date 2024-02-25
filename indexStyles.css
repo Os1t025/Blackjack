@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-image: url('background.jpg');
+}
+a {display: inline-block}
+h1{
+    margin-bottom: .25em;
+}
+
+.container {
+    text-align: center;
+    animation: growFromCenter 2s ease-out forwards;
+    opacity: 0; /* Initially make the container invisible */
+}
+
+@keyframes growFromCenter {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 1;
+    }
+}
+
+.animated-text {
+    font-size: 3rem;
+    font-weight: bold;
+    opacity: 0; /* Initially make the text invisible */
+    animation: fadeIn 1s 1s forwards;
+}
+
+.animated-button {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    opacity: 0; /* Initially make the button invisible */
+    animation: fadeIn 1s 1.5s forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
